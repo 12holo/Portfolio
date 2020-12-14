@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+
+	<title>포트폴리오</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<style>
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			scroll-behavior: smooth;
+		}
+		.navbar{
+			width: 100%;
+			height: 90px;
+			border-bottom: 1px solid #295B85;
+			padding: 0px 50px;
+			position: fixed;
+			background-color: white;
+		}
+		.detail-banner{
+			background-image: url(images/subbanner-03.jpg);
+			background-size: cover;
+			background-position: center center;
+			width: 100%;
+			height: 250px;
+			padding-top: 90px;
+			text-align: center;
+		}
+		.helper5{
+			/*width: 10px;
+			background-color: black;*/
+			display: inline-block;
+			height: 160px;
+			vertical-align: middle;
+		}
+		.detail-banner #detail-title{
+			font-family: 'Anton', sans-serif;
+			font-size: 32px;
+			letter-spacing: 5px;
+			color: #FFFFFF;
+		 	text-shadow:  -1px -1px 0 #295B85, 1px -1px 0 #295B85, -1px 1px 0 #295B85, 1px 1px 0 #295B85; 
+		 	display: inline-block;
+		 	vertical-align: middle;
+		 	/*margin-top: 210px;*/
+		}
+		.detail{
+			width: 100%;
+			background-color: #F8F8FF;
+		}
+		.container03{
+			width: 1160px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 200px;
+			padding-bottom: 150px;
+		}
+		.bar{
+			width: 1160px;
+			height: 50px;
+			margin-left: auto;
+			
+		}
+		
+		#baricon{
+			float: right;
+		}
+		#baricon a{
+			text-decoration: none;
+			color: #295B85;
+			font-size: 30px;
+		}
+		#baricon a:hover{
+			color: #FFFFFF;
+		 	text-shadow:  -1px -1px 0 #295B85, 1px -1px 0 #295B85, -1px 1px 0 #295B85, 1px 1px 0 #295B85; 
+		}
+		.fa-angle-left{
+			padding-right: 25px;
+		}
+		.fa-angle-right{
+			padding-left: 25px;
+		}
+
+		.contact02{
+			background-color: #295B85;
+			width: 100%;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		.contact02 h1{
+			font-family: 'Anton', sans-serif;
+			font-size: 24px;
+			color: #FFFFFF;
+			text-align: center;
+			margin-bottom: 24px;
+			letter-spacing: 5px;
+		}
+		.contact02 .contact-info a{
+			font-family: 'Noto Sans KR', sans-serif;
+			font-size: 14px;
+			font-weight: 300;
+			color:white;
+			text-decoration: none;
+			/*text-align: center;*/
+		}
+		.contact02 .contact-info img{
+			width: 24px;
+			margin-right: 12px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="navbar">
+	<a class="logo" href="index.html">
+		<div class="helper0"></div><img src="https://i.postimg.cc/nCVqtBX5/logo-02-02.png"></a>
+		<ul class="nav">
+			<li><div class="helper0"></div><a href="index.html">HOME</a></li>
+			<li><div class="helper0"></div><a href="subpage.html">DESIGN WORKS</a></li>
+			<li><div class="helper0"></div><a href="#7">CONTACT</a></li>
+		</ul>
+	</div>
+
+	<div class="detail-banner">
+		<div class="container">
+		<div class="helper5"></div><h2 id="detail-title">DESIGN WORKS</h2>
+		</div>
+	</div>
+	<div class="detail">
+		<div class="container03">
+			<div class="bar">
+				<div id="baricon">
+				<a href="detailpage-dysonheadphone.html"><i class="fas fa-angle-left"></i></a>
+				<a href="#"><i class="fas fa-angle-right"></i></a>
+				</div>
+			</div>
+
+
+			<div class="contant">
+				<img src="../쇼핑카트-제품/Sanihandle cart.jpg" width="1160px">
+			</div>
+		</div>
+	</div>
+
+		<div id="7" class="contact02">
+		<h1>CONTACT</h1>
+			<div class="container">
+				<div class="contact-info">
+				<a id="phone" href="#">
+					<img src="https://i.postimg.cc/7JwY01vy/phone.png"><div>+82 10-5289-6625</div></a>
+				<a id="mail" href="#">
+					<img src="https://i.postimg.cc/2b4S1cKw/mail.png"><div>leeaeri0731@gmail.com</div></a>
+				<a id="instagram" href="#">
+					<img src="https://i.postimg.cc/xJrdTDt8/instagram.png"><div>@12holo_ele</div></a>
+				</div>
+			</div>
+	</div>
+	
+</body>
+</html>

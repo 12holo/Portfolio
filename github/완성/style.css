@@ -1,0 +1,554 @@
+<style>
+
+		.navbar{
+			width: 100%;
+			height: 90px;
+			border-bottom: 1px solid #295B85;
+			padding: 0px 50px;
+			position: fixed;
+			background-color: white;
+		}
+		.navbar img{
+			width: 80px;
+			height: 80px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.nav{
+			list-style: none;
+			float: right;
+		}
+		.nav li{
+			float: left;
+
+		}
+		.helper0{
+			display: inline-block;
+			height: 90px;
+			vertical-align: middle;
+			/*width: 1px;
+			background-color: black;*/
+		}
+		.nav li a{
+			font-size: 18px;
+			text-decoration: none;
+			line-height: 36px;
+			color: #0F2232;
+			padding-right: 15px;
+			padding-left: 15px;
+			font-family: 'Noto Sans KR', sans-serif;
+
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.nav li a:hover{
+			background-color: #295B85;
+			color: white;
+			border-radius: 18px;
+		}
+
+		.main-banner{
+			width: 100%;
+			padding-top: 190px;
+			padding-bottom: 100px;
+			/*background-color: gray;*/
+			
+		}
+		.main-title{
+			width: 50%;
+			height: 100%;
+			display: inline-block;
+			margin-right: 100px;
+		}
+		.helper{
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+			/*width: 10px;
+			background-color: blue;*/
+		}
+		.title{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.title span{
+			font-family: 'Anton', sans-serif;
+			font-size: 70px;
+		}
+		.t-1st{
+			color: #295B85;
+			/*display: block;*/
+		}
+		.t-2nd{
+		 	color: #FFFFFF;
+		 	text-shadow:  -1px -1px 0 #295B85, 1px -1px 0 #295B85, -1px 1px 0 #295B85, 1px 1px 0 #295B85; 
+		 	margin-right: 30px;
+		}
+		.t-3rd{
+			color: #FFD400;
+		}
+		  
+		.main-img{
+			width: 470px;
+			height: 100%;
+			display: inline-block;
+		}
+		.helper2{
+			display: inline-block;
+			vertical-align: middle;
+			height: 100%;
+		}
+		.main-banner-img{
+			display: inline-block;
+			vertical-align: middle;
+			width: 470px;
+
+		}
+ 		
+ 		h1{
+			font-family: 'Anton', sans-serif;
+			font-size: 36px;
+			color: #295B85;
+			text-align: center;
+			margin-bottom: 50px;
+			letter-spacing: 5px;
+		}
+		.aboutme{
+			/*background-color: #F8F8aF*/;
+			width: 100%;
+			padding-top: 90px;
+			padding-bottom: 150px;
+		}
+		.container{
+ 			width: 1160px;
+ 			margin-right: auto;
+ 			margin-left: auto;
+ 		}
+		#myphoto{
+			width: 300px;
+			margin-left: 100px;
+			margin-right: 150px;
+			border-radius: 10px;
+		}
+		.introduction{
+			width: 500px;
+			display: inline-block;
+		}
+		.introduction h3{
+			font-size: 32px;
+			margin-bottom: 20px;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+		.introduction p{
+			font-size: 16px;
+			text-align: justify;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 300;
+		}
+		.skills{
+			background-color: #F8F8FF;
+			width: 100%;
+			padding-top: 90px;
+			padding-bottom: 150px;
+		}
+		.skill-logo{
+			/*width: 332px;*/
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			;
+		}
+		.skill-logo img{
+			width: 80px;
+		}
+		.skill-logo img:not(:last-child){
+			margin-right: 50px;
+		}
+		.designworks{
+			width: 100%;
+			padding-top: 90px;
+			padding-bottom: 150px;
+		}
+	/*	.app,.web,.product{
+			width: 300px;
+			height: 300px;
+		}*/
+		.app{
+			background-image: url(../리디북스-앱/리디북스thumbnail-02.jpg);
+			background-position: center;
+			background-size: cover;
+			display: inline-block;
+			width: 300px;
+			height: 300px;
+			margin-right: 16px;
+			vertical-align: middle;
+			border-radius: 10px;
+		}
+		.app-work{
+			width: 300px;
+			height: 300px;
+			display: inline-block;
+			vertical-align:middle;
+			text-align: center;
+			opacity: 0;
+			border-radius: 10px;
+		}
+		.web{
+			background-image: url(../요리쿵조리쿵-웹/요리쿵조리쿵thumbnail.jpg);
+			background-position: center;
+			background-size: cover;
+			display: inline-block;
+			width: 300px;
+			height: 300px;
+			margin-right: 16px;
+			vertical-align: middle;
+			text-align: center;
+			border-radius: 10px;
+		}
+		.web-work{
+			width: 300px;
+			height: 300px;
+			display: inline-block;
+			vertical-align:middle;
+			text-align: center;
+			opacity: 0;
+			border-radius: 10px;
+		}
+		.product{
+			background-image: url(../다이슨헤드폰-제품/다이슨헤드폰thumbnail.png);
+			background-position: center;
+			background-size: cover;
+			display: inline-block;
+			width: 300px;
+			height: 300px;
+			margin-right: 16px;
+			vertical-align: middle;
+			text-align: center;
+			border-radius: 10px;
+		}
+		.product-work{
+			width: 300px;
+			height: 300px;
+			display: inline-block;
+			vertical-align:middle;
+			text-align: center;
+			opacity: 0;
+			border-radius: 10px;
+		}
+		.work-title{
+			font-family: 'Noto Sans KR', sans-serif;
+			color: white;
+			font-size:24px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.app-work:hover,.web-work:hover,.product-work:hover{
+			opacity: 1.0;
+			background-image: none;
+			background-color:#FFD400;
+		}
+		.morebutton{
+			width: 180px;
+			height: 300px;
+			text-align: center;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-size: 20px;
+			font-weight: 300;
+			color: #0F2232;
+			text-decoration: none;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.morebutton:hover{
+			background-color: #295B85;
+			/*opacity: 0.8;*/
+			color: white;
+			font-weight: 400;
+			border-radius: 10px;
+		}
+		.helper3{
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+		.morebutton .more{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		#angle-right{
+			font-size: 18px;
+		}
+		.contact{
+			background-color: #295B85;
+			width: 100%;
+			padding-top: 90px;
+			padding-bottom: 90px;
+		}
+		.contact h1{
+			color: white;
+		}
+		.contact-info{
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+		.contact-info a{
+			font-family: 'Noto Sans KR', sans-serif;
+			font-size: 18px;
+			font-weight: 300;
+			color:white;
+			text-decoration: none;
+			/*text-align: center;*/
+		}
+		#mail,#instagram{
+			margin-left: 120px;
+		}
+		
+		.contact-info img{
+			width: 40px;
+			margin-right: 20px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.contact-info div{
+			display: inline-block;
+			vertical-align: middle;
+
+		}
+
+
+		.sub-banner{
+			background-image: url(images/subbanner-03.jpg);
+			background-size: cover;
+			background-position: center center;
+			width: 100%;
+			height: 350px;
+			padding-top: 90px;
+			text-align: center;
+		}
+		.helper5{
+			/*width: 10px;
+			background-color: black;*/
+			display: inline-block;
+			height: 260px;
+			vertical-align: middle;
+		}
+		.sub-banner #sub-title{
+			font-family: 'Anton', sans-serif;
+			font-size: 42px;
+			letter-spacing: 5px;
+			color: #FFFFFF;
+		 	text-shadow:  -1px -1px 0 #295B85, 1px -1px 0 #295B85, -1px 1px 0 #295B85, 1px 1px 0 #295B85; 
+		 	display: inline-block;
+		 	vertical-align: middle;
+		 	/*margin-top: 210px;*/
+		}
+		.applist,.weblist,.productlist,._2dlist,._3dlist{
+			padding-top: 90px;
+		}
+		._3dlist{
+			padding-bottom: 150px;
+		}
+		/*workimg*/
+		.container02{
+ 			width: 920px;
+ 			margin-right: auto;
+ 			margin-left: auto;
+ 		}
+		.applist a,.weblist a,.productlist a,._2dlist a,._3dlist a{
+			display: block;
+			width: 215px;
+			height: 215px;
+			float: left;
+			text-align: center;
+		}
+		.applist a:not(:last-child),.weblist a:not(:last-child),.productlist a:not(:last-child),._2dlist a:not(:last-child),._3dlist a:not(:last-child){
+			margin-right: 20px;
+		}
+
+		/*app*/
+		.a01{
+			background-image: url(../리디북스-앱/리디북스thumbnail-02.jpg);
+			background-position: center;
+			background-size: cover;
+			border-radius: 10px;
+		}
+		.a02{
+			background-image: url(../레일패스-앱/레일패스thumbnail.jpg);
+			background-position: center;
+			background-size: cover;
+			border-radius: 10px;
+		}
+		.a03{
+			/*background-image: url(https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F226900375933F12235);
+			background-position: center;
+			background-size: cover;*/
+			background-color: #f7f7f7;
+			border-radius: 10px;	
+		}
+		.a04{
+			/*background-image: url(https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F226900375933F12235);
+			background-position: center;
+			background-size: cover;*/
+			background-color: #f7f7f7;
+			border-radius: 10px;
+		}
+
+		/*web*/
+		.w01{
+			background-image: url(../요리쿵조리쿵-웹/요리쿵조리쿵thumbnail.jpg);
+			background-position: center;
+			background-size: cover;
+			border-radius: 10px;
+		}
+		.w02{
+			/*background-image: url(https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F226900375933F12235);
+			background-position: center;
+			background-size: cover;*/
+			background-color: #f7f7f7;
+			border-radius: 10px;
+		}
+		.w03{
+			/*background-image: url(https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F226900375933F12235);
+			background-position: center;
+			background-size: cover;*/
+			background-color: #f7f7f7;
+			border-radius: 10px;
+		}
+		.w04{
+			/*background-image: url(https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F226900375933F12235);
+			background-position: center;
+			background-size: cover;*/
+			background-color: #f7f7f7;
+			border-radius: 10px;
+		}
+
+		/*product*/
+		.p01{
+			background-image: url(../다이슨헤드폰-제품/다이슨헤드폰thumbnail.png);
+			background-position: center;
+			background-size: cover;
+			border-radius: 10px;
+
+		}
+		.p02{
+			background-image: url(../쇼핑카트-제품/cart.png);
+			background-position: center;
+			background-size: cover;
+			border-radius: 10px;
+
+		}
+		.p03{
+			/*background-image: url(https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F226900375933F12235);
+			background-position: center;
+			background-size: cover;*/
+			background-color: #f7f7f7;
+			border-radius: 10px;
+
+		}
+		.p04{
+			/*background-image: url(https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F226900375933F12235);
+			background-position: center;
+			background-size: cover;*/
+			background-color: #f7f7f7;
+			border-radius: 10px;
+
+		}
+
+		/*2d*/
+		._2d01{
+			background-image: url(../맥도날드-2D/맥마블thumbnail-04.jpg);
+			background-position: center;
+			background-size: cover;
+			border-radius: 10px;
+		}
+		._2d02{
+			background-image: url(../2D/2dthumbnail.jpg);
+			background-position: center;
+			background-size: cover;
+			border-radius: 10px;
+		}
+		._2d03{
+			/*background-image: url(https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F226900375933F12235);
+			background-position: center;
+			background-size: cover;*/
+			background-color: #f7f7f7;
+			border-radius: 10px;
+		}
+		._2d04{
+			/*background-image: url(https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F226900375933F12235);
+			background-position: center;
+			background-size: cover;*/
+			background-color: #f7f7f7;
+			border-radius: 10px;
+		}
+
+		/*3d*/
+		._3d01{
+			background-image: url(../유지-3D/무선이어폰.21.jpg);
+			background-position: center;
+			background-size: cover;
+			border-radius: 10px;
+		}
+		._3d02{
+			background-image: url(../유지-3D/c4dthumbnail.jpg);
+			background-position: center;
+			background-size: cover;
+			border-radius: 10px;
+		}
+		._3d03{
+			/*background-image: url(https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F226900375933F12235);
+			background-position: center;
+			background-size: cover;*/
+			background-color: #f7f7f7;
+			border-radius: 10px;
+		}
+		._3d04{
+			/*background-image: url(https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F226900375933F12235);
+			background-position: center;
+			background-size: cover;*/
+			background-color: #f7f7f7;
+			border-radius: 10px;
+		}
+		/*---------------------*/
+		.helper4{
+			display: inline-block;
+			height: 215px;
+			vertical-align: middle;
+			
+		}
+		.work-info{
+			width: 215px;
+			height: 215px;
+			display: inline-block;
+			vertical-align:middle;
+			text-align: center;
+			opacity: 0;
+			border-radius: 10px;
+		}
+		/*.work-info:hover{
+			background-image: none;
+			background-color:#FFD400;
+			opacity: 1.0;
+		}*/
+		.active:hover{
+			background-image: none;
+			background-color:#FFD400;
+			opacity: 1.0;
+
+		}
+	
+		.work-title{
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 18px;
+		}
+
+		
+		.clearfix::after{
+			display: block;
+			content: ' ';
+			clear: both;
+		}
+
+	</style>
